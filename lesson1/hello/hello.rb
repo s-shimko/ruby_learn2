@@ -1,4 +1,6 @@
-require_relative "requires/hello_method"
+#comment
+
+equire_relative "requires/hello_method"
 
 puts "Hello world!"
 
