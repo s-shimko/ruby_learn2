@@ -1,3 +1,11 @@
+code_type = ''
+until [1, 2, 3].include?(code_type) do
+  code_type = gets.chomp.to_i
+  if [1, 2, 3].include?(code_type) == false
+    puts "Wrong type!"
+  end
+end
+
 "test\n".chomp
 "two words".split
 "word".include?("o")
