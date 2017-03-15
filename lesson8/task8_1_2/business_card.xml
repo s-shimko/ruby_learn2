@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<person>
+  <name>
+    <last_name>Shimko</last_name>
+    <first_name>Sergey</first_name>
+    <middle_name>Alexandrovich</middle_name>
+  </name>
+
+  <contacts>
+    <phone>12-34-56</phone>
+    <email>sss@ddd.mail</email>
+  </contacts>
+
+  <skills>Ruby, Capybara, Xpath</skills>
+
+</person>

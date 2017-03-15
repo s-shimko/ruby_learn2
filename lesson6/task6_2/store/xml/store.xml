@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<products>
+  <product price="1000" qty="5">
+    <book title="Fight club" author_name="Chuck Palahniuk"></book>
+  </product>
+
+  <product price="400" qty="1">
+    <movie title="Leon" director_name="Luc Besson" year="1998"></movie>
+  </product>
+
+  <product price="100" qty="10">
+    <disc album_name="Seasons in the Abyss" artist_name="Slayer" genre="Metal"></disc>
+  </product>
+</products>

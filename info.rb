@@ -1,3 +1,29 @@
+Person.all # вызов статический метод
+def self.post_types # объявление статического метода
+  [Memo, Link, Task]
+end
+
+
+
+
+[5,6,7].each_with_index do |x,i|
+  puts "#{i} -> #{x}"
+end
+Outputs: 0 -> 5 1 -> 6 2 -> 7
+
+hash = Hash.new
+%w(cat dog wombat).each_with_index {|item, index|
+  hash[item] = index
+}
+hash   #=> {"cat"=>0, "dog"=>1, "wombat"=>2}
+
+
+for b in [1,2,3] do
+  puts "b " + defined?(b)
+  puts "a " + defined?(a)
+end
+
+
 code_type = ''
 until [1, 2, 3].include?(code_type) do
   code_type = gets.chomp.to_i
