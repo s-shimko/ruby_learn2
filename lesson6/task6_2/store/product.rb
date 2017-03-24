@@ -8,6 +8,22 @@ class Product
     @qty = qty
   end
 
+  def self.read_from_xml(xml)
+    require "rexml/document"
+    require "date"
+
+    current_path = File.dirname(__FILE__)
+
+    file_path = current_path + "/xml/#{xml}"
+    abort "Не удалось найти визитку" unless File.exist?(file_path)
+
+    file = File.new(file_path)
+    doc = REXML::Document.new(file)
+    file.close
+
+    doc
+  end
+
   def buy
     # Если товар был на складе — уменить количество и вернуть цену
     if @qty > 0

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<business_card>
+  <first_name>Sergey</first_name>
+  <second_name>Alexandrovich</second_name>
+  <last_name>Shimko</last_name>
+  <phone>12-34-56</phone>
+  <email>sss@ddd.mail</email>
+  <skills>Ruby, Capybara, Xpath</skills>
+  <photo>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBIhn8ekga4TaBuknZRMxWTKf8Dgp4N-0JqN393wDdWXxdyAYr</photo>
+</business_card>
