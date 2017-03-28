@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+  <product price='22' qty='3'>
+    <book title='sdf' author_name='aaa'/>
+  </product>
+  <product price='44' qty='99'>
+    <movie title='fdgfg' director_name='vvvv' year='129'/>
+  </product>
+  <product price='33' qty='555'>
+    <disc artist_name='asdf' album_name='iii' genre='metal'/>
+  </product>
+</products>
