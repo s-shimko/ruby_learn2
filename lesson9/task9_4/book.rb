@@ -9,6 +9,10 @@ class Book < Product
     @author_name = options[:author_name]
   end
 
+  def to_xml
+  end
+
+
   # def update(options)
   #   @title = options['title']
   #   @author_name = options['author_name']

@@ -10,6 +10,10 @@ class Movie < Product
     @year = options[:year]
   end
 
+  def to_xml
+  end
+
+
   # def update(options)
   #   @title = options['title']
   #   @director_name = options['director_name']

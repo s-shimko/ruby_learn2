@@ -10,6 +10,9 @@ class Disc < Product
     @genre = options[:genre]
   end
 
+  def to_xml
+  end
+
   # def update(options)
   #   @album_name = options['album_name']
   #   @artist_name = options['artist_name']

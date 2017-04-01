@@ -1,0 +1,23 @@
+//{
+//  "person": {
+//    "name": {
+//      "last_name": "Shimko",
+//      "first_name": "Sergey",
+//      "middle_name": "Alexandrovich"
+//    },
+//    "contacts": {
+//      "phone": "1223322",
+//      "email": "sss@dfdf.rgu"
+//    },
+//    "skills": "Ruby, Capybara, Xpath"
+//  }
+//}
+
+{
+  "last_name": "Shimko",
+  "first_name": "Sergey",
+  "middle_name": "Alexandrovich",
+  "phone": "1223322",
+  "email": "sss@dfdf.rgu",
+  "skills": "Ruby, Capybara, Xpath"
+}

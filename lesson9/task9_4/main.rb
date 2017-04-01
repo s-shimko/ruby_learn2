@@ -6,7 +6,10 @@ require_relative "book"
 require_relative "movie"
 require_relative "disc"
 
-Product.compose_xml
+# Product.compose_xml # - my variant
+
+puts
+
 
 doc = Product.read_from_xml("store.xml")
 
