@@ -3,7 +3,26 @@ require 'uri'
 require 'rexml/document'
 require_relative 'print_forecast_method.rb'
 
-uri = URI.parse("http://xml.meteoservice.ru/export/gismeteo/point/34.xml")
+
+CITIES = {'Borisov' => 9, 'Minsk' => 34, 'Mogilev' => 35, 'Orsha' => 58}
+
+puts "What city?"
+puts CITIES.keys.join(', ')
+
+city = nil
+
+# until city
+#   city = CITIES[STDIN.gets.chomp]
+#   puts "Wrong city! Again:" unless city
+# end
+
+until CITIES.keys.include?(city)
+  city = STDIN.gets.chomp
+  puts "Wrong city! Again:" unless city
+end
+
+
+uri = URI.parse("http://xml.meteoservice.ru/export/gismeteo/point/#{CITIES[city]}.xml")
 
 response = Net::HTTP.get_response(uri)
 
@@ -18,9 +37,6 @@ puts city_name
 forecasts.each do |forecast|
   print_forecast(forecast, Time.now)
 end
-
-
-
 
 
 # for i in 0..count_forecasts do
