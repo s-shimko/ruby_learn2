@@ -35,6 +35,5 @@ def print_forecast(el, current_time)
   " wind to #{max_wind} m/s, #{clouds}"
   puts
 
-
 end
 

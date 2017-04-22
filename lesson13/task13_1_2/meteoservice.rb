@@ -11,11 +11,6 @@ puts CITIES.keys.join(', ')
 
 city = nil
 
-# until city
-#   city = CITIES[STDIN.gets.chomp]
-#   puts "Wrong city! Again:" unless city
-# end
-
 until CITIES.keys.include?(city)
   city = STDIN.gets.chomp
   puts "Wrong city! Again:" unless city
