@@ -9,13 +9,13 @@ options = {}
 OptionParser.new do |opt|
   opt.banner = 'Usage: twitter.rb [options]'
 
-  opt.on('-h', 'Вывод помощи по настройкам') do
+  opt.on('-h', 'Settings Help') do
     puts opt
     exit
   end
 
-  opt.on('--twit "twit"', 'Затвитить "твит"') { |o| options[:twit] = o } #
-  opt.on('--timeline USER_NAME', 'Показать последние твиты') { |o| options[:timeline] = o } #
+  opt.on('--twit "twit"', 'Post a twit') { |o| options[:twit] = o } #
+  opt.on('--timeline USER_NAME', 'Show last twits') { |o| options[:timeline] = o } #
 end.parse!
 
 client = Twitter::REST::Client.new do |config|
